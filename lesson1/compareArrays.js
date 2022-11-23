@@ -8,11 +8,7 @@ function compareArrays(firstArr, secondArr) {
         return false;
     }
 
-    for (let i = 0; i < firstArr.length; i++) {
-        if (firstArr[i] !== secondArr[i]) {
-            return false;
-        }
-    }
+    const result = firstArr.filter((item, index) => item !== secondArr[index]);
 
-    return true;
+    return result.length ? false : true;
 };
