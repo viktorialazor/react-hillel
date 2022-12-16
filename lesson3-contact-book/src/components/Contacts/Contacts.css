@@ -1,0 +1,12 @@
+.list {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 0;
+  margin-bottom: 20px;
+  padding-left: 0;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  color: rgb(14 14 126);
+  counter-reset: num;
+}

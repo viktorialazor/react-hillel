@@ -1,0 +1,75 @@
+.form__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 10px;
+}
+
+.form__row {
+  display: flex;
+  margin: 10px 0;
+}
+
+.form__input {
+  min-height: 20px;
+  padding: 5px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  color: rgb(14 14 126);
+  border: 2px solid rgb(14 14 126);
+}
+
+.form__input + .form__input {
+  margin-left: 15px;
+}
+
+.form__input:focus,
+.form__input:active {
+  outline: 1px dashed rgb(14 14 126);
+  outline-offset: 1px;
+}
+
+.form__button {
+  min-height: 34px;
+  min-width: 160px;
+  padding: 5px 20px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  color: #fff;
+  background-color: rgb(14 14 126);
+  border: 2px solid rgb(14 14 126);
+  border-radius: 0;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.form__button + .form__button {
+  margin-left: 15px;
+}
+
+.form__button:disabled,
+.form__button:disabled:hover {
+  background-color: rgb(133 133 133);
+  border: 2px solid rgb(133 133 133);
+  color: #fff;
+  cursor: default;
+}
+
+.form__button:hover,
+.form__button:active {
+  color: rgb(14 14 126);
+  background-color: transparent;
+}
+
+.form__button:focus {
+  outline: 1px dashed rgb(14 14 126);
+  outline-offset: 1px;
+}
