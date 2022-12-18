@@ -7,7 +7,7 @@
 }
 
 .list__item + .list__item {
-  margin-top: 5px;
+  margin-top: 10px;
 }
 
 .list__item::before,
@@ -27,6 +27,10 @@
   color: rgb(14 14 126);
   content: counter(num);
   counter-increment: num;
+}
+
+.list__info {
+  margin: 0;
 }
 
 .list__text {

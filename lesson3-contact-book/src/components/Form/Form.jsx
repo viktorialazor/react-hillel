@@ -16,13 +16,6 @@ class Form extends React.Component {
     };
   }
 
-  onAddCotactClick = () => {
-    this.changeFormStatus();
-    if (this.state.isFormOpen) {
-      this.resetForm();
-    }
-  };
-
   changeFormStatus = () => {
     this.setState((state) => {
       return {
@@ -101,6 +94,17 @@ class Form extends React.Component {
     return message.trim() !== '';
   }
 
+  renderAddButton() {
+    return (
+      <button
+        className="form__button"
+        type="button"
+        onClick={this.changeFormStatus}>
+        Add Contact
+      </button>
+    );
+  }
+
   renderForm() {
     return (
       <form className="form">
@@ -152,13 +156,7 @@ class Form extends React.Component {
   render() {
     return (
       <div className="form__wrapper">
-        <button
-          className="form__button"
-          type="button"
-          onClick={this.onAddCotactClick}>
-          Add Contact
-        </button>
-        {this.state.isFormOpen ? this.renderForm() : ''}
+        {this.state.isFormOpen ? this.renderForm() : this.renderAddButton()}
       </div>
     );
   }

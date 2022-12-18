@@ -2,8 +2,6 @@
 
 .idea
 .eslintrc
-.prettierrc.json
-.prettierignore
 
 # dependencies
 /node_modules

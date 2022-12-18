@@ -11,7 +11,7 @@ class ContactItem extends React.Component {
     const { id, firstName, lastName, phone } = this.props.contact;
     return (
       <li className="list__item">
-        <p>
+        <p className="list__info">
           <span className="list__text">{firstName}</span>
           <span className="list__text">{lastName}</span>
           <span className="list__text list__text--phone">{phone}</span>
