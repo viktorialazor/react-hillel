@@ -1,0 +1,7 @@
+.container {
+  display: inline-flex;
+  flex-direction: column;
+  min-width: 510px;
+  padding: 20px;
+  border: 2px solid rgb(14 14 126);
+}
