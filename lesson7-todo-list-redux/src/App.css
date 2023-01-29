@@ -1,0 +1,29 @@
+.container {
+  display: inline-flex;
+  flex-direction: column;
+  padding: 20px;
+  border: 2px solid rgb(14 14 126);
+}
+
+.button {
+  font-size: 14px;
+  font-weight: 500;
+  color: rgb(14 14 126);
+  background-color: transparent;
+  border-style: solid;
+  border-color: rgb(14 14 126);
+  border-radius: 0;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.button:hover,
+.button:active {
+  color: #fff;
+  background-color: rgb(14 14 126);
+}
+
+.button:focus {
+  outline: 1px dashed rgb(14 14 126);
+  outline-offset: 1px;
+}
