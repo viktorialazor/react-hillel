@@ -26,7 +26,11 @@ const INITIAL_STATE = {
   todoMessage: "",
 };
 
-const rootReducer = (state = INITIAL_STATE, { type, payload }) => {
+const savedState = localStorage.getItem("reduxState")
+  ? JSON.parse(localStorage.getItem("reduxState"))
+  : INITIAL_STATE;
+
+const rootReducer = (state = savedState, { type, payload }) => {
   switch (type) {
     case ACTION_TODO_MESSAGE:
       return { ...state, todoMessage: payload };
