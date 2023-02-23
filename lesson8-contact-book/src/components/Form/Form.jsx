@@ -24,19 +24,15 @@ function Form({
 
   const onInputChange = (e) => {
     const { value, name } = e.target;
-
     const updatedContact = {
       ...formData,
       [name]: value,
     };
-
     const updatedIsFieldsFull = isFormFieldsFull(updatedContact) ? true : false;
-
     onSetFormData({
       ...formData,
       ...updatedContact,
     });
-
     onCheckFormData(updatedIsFieldsFull);
   };
 
@@ -54,11 +50,13 @@ function Form({
     onAddContactItem(newItem);
     resetForm();
     changeFormStatus();
+    onCheckFormData(false);
   };
 
   const onCancelClick = () => {
     resetForm();
     changeFormStatus();
+    onCheckFormData(false);
   };
 
   const resetForm = () => {

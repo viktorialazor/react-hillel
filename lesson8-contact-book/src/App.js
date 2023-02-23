@@ -8,7 +8,7 @@ import { connect } from "react-redux";
 function App({ getContactList }) {
   useEffect(() => {
     getContactList();
-  });
+  }, []);
 
   return (
     <div className="container">
