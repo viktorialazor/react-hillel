@@ -1,0 +1,51 @@
+.album-list {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 20px;
+}
+
+.album-list__item {
+  margin-bottom: 10px;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  color: rgb(14 14 126);
+}
+
+.album-list__item a {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  color: rgb(14 14 126);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.3s;
+}
+
+.album-list__item a:hover {
+  border-color: rgb(14 14 126);
+}
+
+.album-list__item a:focus {
+  outline: 1px dashed rgb(14 14 126);
+  outline-offset: 1px;
+}
+
+.photo-list {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 850px;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 18px;
+  list-style: none;
+}
+
+.photo-list__item {
+  width: 150px;
+  height: 150px;
+  margin: 2px;
+}
+
+.photo-list__img {
+  width: 150px;
+  height: auto;
+}
