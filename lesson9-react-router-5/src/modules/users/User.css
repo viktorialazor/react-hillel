@@ -1,0 +1,103 @@
+.user-list {
+  width: 100%;
+  margin-top: 0;
+  padding-left: 20px;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  color: rgb(14 14 126);
+}
+
+.user-list__item {
+  margin-bottom: 10px;
+}
+
+.user-list__wrapper {
+  display: flex;
+  margin-top: 0;
+  margin-bottom: 0;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 100%;
+  max-width: 100%;
+}
+
+.user-list__info {
+  display: flex;
+  flex-direction: column;
+  min-width: 250px;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-right: 40px;
+}
+
+.user-list__buttons {
+  display: block;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.user-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+.user-info__text {
+  display: block;
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  color: rgb(14 14 126);
+  line-height: 1;
+}
+
+.user-list__text {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.form__row {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.form__input {
+  min-height: 20px;
+  margin-right: 10px;
+  padding: 5px;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  color: rgb(14 14 126);
+  border: 2px solid rgb(14 14 126);
+}
+
+.form__buttons {
+  margin-top: 20px;
+}
+
+.form_error {
+  margin-top: 10px;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  color: rgb(161, 25, 7);
+}
+
+.form__input:focus,
+.form__input:active {
+  outline: 1px dashed rgb(14 14 126);
+  outline-offset: 1px;
+}
+
+.form__button {
+  border-width: 2px;
+}
