@@ -5,7 +5,7 @@ export default class ContactApi {
   static request(url = "", method = "GET", body) {
     return fetch(ContactApi.URL + url, {
       method,
-      body: body ? JSON.stringify(body) : undefined,
+      body: body ? JSON.stringify(body) : null,
       headers: {
         "Content-type": "application/json",
       },
