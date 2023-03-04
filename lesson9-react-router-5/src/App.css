@@ -1,0 +1,84 @@
+.container {
+  width: 100%;
+}
+
+.container--add {
+  padding-left: 20px;
+}
+
+.title {
+  margin-top: 0;
+  margin-bottom: 15px;
+  font-family: "Roboto", sans-serif;
+  font-size: 24px;
+  color: rgb(14 14 126);
+}
+
+.title--list {
+  padding-left: 20px;
+}
+
+.button {
+  padding: 5px 20px;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  color: rgb(14 14 126);
+  background-color: transparent;
+  border-style: solid;
+  border-color: rgb(14 14 126);
+  border-radius: 0;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.button--add {
+  margin-bottom: 20px;
+  margin-left: 20px;
+}
+
+.button + .button {
+  margin-left: 10px;
+}
+
+.button a {
+  display: inline-block;
+  color: rgb(14 14 126);
+  text-decoration: none;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.button {
+  position: relative;
+}
+
+.button a:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.button:hover,
+.button:active,
+.button:hover a,
+.button:active a {
+  color: #fff;
+}
+
+.button:hover,
+.button:active {
+  background-color: rgb(14 14 126);
+}
+
+.button:focus {
+  outline: 1px dashed rgb(14 14 126);
+  outline-offset: 1px;
+}
+
+.button a:focus {
+  outline: none;
+}
